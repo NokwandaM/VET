@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-header>
+    Popular Safe Houses (January 2017)
+  </ion-card-header>
+
+  <ion-card-content>
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="radarChartData"
+              [labels]="radarChartLabels"
+              [chartType]="radarChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </ion-card-content>
+</ion-card>

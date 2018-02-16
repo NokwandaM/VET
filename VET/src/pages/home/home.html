@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button icon-only menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons end><button icon-only ion-button [navPush]="range"><ion-icon name="search"></ion-icon></button></ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <popular-safe-house></popular-safe-house>
+  <abuse-types></abuse-types>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-menu id="leftMenu" [content]="content">
+
+<ion-content class="menu-content" padding overflow-scroll="true">
+
+  <!-- <ion-row style="margin-bottom: 40px; margin-top: 40px">
+    <ion-col text-center>
+      <img src="images/logo.png" width="100px" />
+    </ion-col>
+  </ion-row> -->
+
+  <ion-list class="side-menu" no-lines>
+    <button detail-none ion-item style="border-top: 0px; border-bottom: 0px">
+      <ion-icon name="star" item-left></ion-icon>Favourites
+    </button>
+    <button detail-none ion-item style="border-top: 0px; border-bottom: 0px' border-color: transparent">
+      <ion-icon name="card" item-left></ion-icon>
+      Saved Reports
+    </button>
+    <button detail-none ion-item style="border-top: 0px; border-bottom: 0px">
+      <ion-icon name="settings" item-left></ion-icon>
+      Report Issue
+    </button>
+    <button detail-none clear ion-item style="border-top: 0px; border-bottom: 0px">
+      <ion-icon name="help" item-left></ion-icon>
+      About
+    </button>
+  </ion-list>
+
+  <button ion-button style="position: absolute; bottom: 0; left: 0;" clear color="light" margin icon-only>
+    <ion-icon name="exit" item-left></ion-icon>
+    Logout
+  </button>
+</ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>
